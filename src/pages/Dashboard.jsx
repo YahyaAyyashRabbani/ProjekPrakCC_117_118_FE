@@ -32,7 +32,7 @@
       async function loadUserProfile() {
         if (!accessToken) return;
         try {
-          const res = await fetch("http://localhost:5000/user", {
+          const res = await fetch(`${BASE_URL}/user`, {
             headers: { Authorization: `Bearer ${accessToken}` },
           });
           if (!res.ok) throw new Error("Gagal mengambil profil pengguna");
@@ -51,7 +51,7 @@
     // Fungsi loadReviews sekarang di luar useEffect
     async function loadReviews() {
       try {
-        let url = `http://localhost:5000/review`;
+        let url = `${BASE_URL}/review`;
         const params = new URLSearchParams();
         if (filterAnime) params.append("animeId", filterAnime);
         if (filterRating) params.append("rating", filterRating);
@@ -89,7 +89,7 @@
       if (!window.confirm("Yakin ingin menghapus review ini?")) return;
 
       try {
-        const res = await fetch(`http://localhost:5000/delete-review/${id}`, {
+        const res = await fetch(`${BASE_URL}/delete-review/${id}`, {
           method: "DELETE",
           headers: { Authorization: `Bearer ${accessToken}` },
         });
