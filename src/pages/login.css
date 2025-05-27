@@ -1,0 +1,120 @@
+body{
+  min-height: 100vh;
+  background: #f0f2f5;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,  #1f2937, #000000);
+  color: #1e293b;
+  padding: 20px; /* opsional, agar tidak mepet ke tepi */
+  box-sizing: border-box;
+}
+
+/* Kemudian styling konten dalam container */
+.page-wrapper .container {
+  background: white;
+  padding: 32px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow:
+    0 4px 15px rgba(37, 99, 235, 0.3),
+    0 8px 30px rgba(37, 99, 235, 0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Contoh styling lain tetap pakai .page-wrapper untuk spesifikasi */
+.page-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1f2937;
+  user-select: none;
+}
+.page-wrapper label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.page-wrapper input[type="text"],
+.page-wrapper input[type="password"] {
+  width: 90%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.page-wrapper input[type="email"]:focus,
+.page-wrapper input[type="password"]:focus {
+  border-color: #1f2937;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+.page-wrapper button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #1f2937;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-wrapper button:hover,
+.page-wrapper button:focus {
+  background-color: #1f2937;
+  box-shadow: 0 7px 20px rgba(37, 99, 235, 0.8);
+  outline: none;
+}
+
+.page-wrapper .form-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #475569;
+  user-select: none;
+}
+
+.page-wrapper .form-footer a {
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.page-wrapper .form-footer a:hover,
+.page-wrapper .form-footer a:focus {
+  color: #1e40af;
+  outline: none;
+}
+
+.page-wrapper .error-message {
+  color: #dc2626;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
