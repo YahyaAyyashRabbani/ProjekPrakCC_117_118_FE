@@ -1,0 +1,16 @@
+runtime: nodejs20
+service: projek_117_118
+instance_class: F1
+
+handlers:
+  # Serve all static files in build folder (js, css, images, etc)
+  - url: /(.*\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff2?|ttf|eot|map))$
+    static_files: build/\1
+    upload: build/.*\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff2?|ttf|eot|map)$
+
+  # Fallback all other routes to index.html for client-side routing
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
+
+default_expiration: "1h"
