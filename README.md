@@ -1,4 +1,4 @@
-#Frontend - Anime Review App
+# Frontend - Anime Review App
 Berikut adalah daftar halaman (route) dan fitur otentikasi yang digunakan pada aplikasi frontend Anime Review berbasis React:
 
 ## Routing
