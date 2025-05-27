@@ -1,5 +1,5 @@
 runtime: nodejs20
-service: projek_117_118
+service: projek-117-118
 instance_class: F1
 
 handlers:
