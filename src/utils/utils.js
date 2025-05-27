@@ -1,1 +1,0 @@
-export const BASE_URL = "https://be-117-118-995193249744.us-central1.run.app";
