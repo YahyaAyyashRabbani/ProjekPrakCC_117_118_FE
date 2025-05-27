@@ -1,6 +1,8 @@
   import React, { useEffect, useState } from "react";
   import { useNavigate } from "react-router-dom";
   import "./Detail.css";
+  import { BASE_URL } from "../utils/utils.js";
+  
 
   function Dashboard() {
     const [userData, setUserData] = useState({
